@@ -1,0 +1,128 @@
+:root {
+    --blanco: #ffffff;
+    --verdeClaro: #0ed069;
+    --verdeOscuro: #139e54;
+    --verde: #95be19;
+    --negro: #212121;
+    --amarillo: #f3cf31;
+    --marron: #a9700c;
+    --grisClaro: #cccac8;
+    --grisOscuro: #94908c;
+    --azul: #008dc9;
+
+
+
+
+}
+
+html {
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-color: var(--verdeOscuro);
+}
+
+
+.encabezado {
+    text-align: start;
+    font-size: 3rem;
+    color: var(--negro);
+    margin-left: 35rem;
+    
+}
+.encabezado{
+    animation: fundacion 3s ease-in-out infinite;
+    animation-direction:alternate-reverse;
+}
+@keyframes fundacion {
+    0%{
+        transform: translate(-20%,15%);
+    }
+    50%{
+        text-shadow: 0 50px 50px rgba(0, 0 , 0, 1);
+    }
+    
+    
+}
+
+
+.contenedor {
+    width: 120rem;
+    margin: 20rem auto 0 auto;
+    /*sentido horario a partir de las 12*/
+}
+
+.barra {
+    background-color: var(--verdeClaro);
+}
+
+.navegacion-principal {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--amarillo);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--verdeOscuro);
+
+}
+
+
+
+.contenido-header {
+    background-image: url(../img/pandas2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.articulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    
+}
+
+.contenedor-image{
+  
+   text-align: center;
+   
+}
+
+.borde{
+    border-radius: 3rem;
+}
+
+.texto{
+   text-align: center;
+}
+.texto h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.texto p{
+    font-size: 2rem;
+    
+}
+
